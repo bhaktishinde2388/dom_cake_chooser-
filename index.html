@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Pacifico&display=swap');
         body
         {
             background-color: #FFDEE9;
@@ -44,9 +45,12 @@
         .text
         {
             text-align: center;
-            font-size: 24px;
+            font-size: 34px;
             color: purple;
             font-weight: bolder;
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
         .btn-container
         {
@@ -74,40 +78,42 @@
   <b><i><hl class="heading">Cake</hl></b></i>
     <div class="container">
     <img   class="container-img"  src="choco (2).png" id="bulb">
-    <p class="text" id="flavor"><u>Flavor:</u></p>
+    <p class="text" id="flavour"><u></u></p>
     </div>
     <div class="btn-container">
-    <button class="btn-toggle " type="button" onclick="cake('btn1')">butter scotch</button>
-    <button class="btn-toggle " type="button" onclick="cake('btn2')">chocolate</button>
-    <button class="btn-toggle " type="button" onclick="cake('btn3')">fruit</button>
-    <button class="btn-toggle" type="button"  onclick="cake('btn4')">oreo</button>
-    <button class="btn-toggle " type="button" onclick="cake('btn5')">pineApple</button>
+    <button class="btn-toggle " type="button" onclick="cake('butter scotch')">butter scotch</button>
+    <button class="btn-toggle " type="button" onclick="cake('chocolate')">chocolate</button>
+    <button class="btn-toggle " type="button" onclick="cake('Fruit')">fruit</button>
+    <button class="btn-toggle" type="button"  onclick="cake('oreo')">oreo</button>
+    <button class="btn-toggle " type="button" onclick="cake('pineApple')">pineApple</button>
 
     <script>
         function cake(b)
         {
-           const flavor = document.getElementById('bulb');
-           if(b=='btn1')
+           const flavour = document.getElementById('bulb');
+           if(b=='butter scotch')
            {
-           flavor.src = 'BUTTER-SCOTCH.png';
+           flavour.src = 'BUTTER-SCOTCH.png';
            }
-           else if(b=='btn2')
+           else if(b=='chocolate')
             {
-                flavor.src = 'choco (2).png';
+                flavour.src = 'choco (2).png';
             }
-            else if(b=='btn3')
+            else if(b=='Fruit')
             {
-                flavor.src = 'fruit2.png';
+                flavour.src = 'fruit2.png';
             }
-            else if(b=='btn4')
+            else if(b=='oreo')
             {
-                flavor.src = 'oreo-cake2.png ';
+                flavour.src = 'oreo-cake2.png ';
             }
-            else if(b=='btn5')
+            else if(b=='pineApple')
             {
-                flavor.src = 'pineApple2.png';
+                flavour.src = 'pineApple2.png';
             }
-           
+            const choice=document.getElementById("flavour");
+
+choice.innerText=`${b}`; 
     }
     </script>
 </div>
