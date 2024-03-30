@@ -20,6 +20,13 @@
             display: flex;
             justify-content: center;
         }
+        @media screen and (max-width:768px)
+        {
+            .heading
+        {
+            font-size: 50px;         
+        }
+    }
         .container
         {
        
@@ -33,7 +40,18 @@
          display: flex;
            justify-content: center;
         }
-        
+        @media screen and (max-width:768px)
+        {
+            .container
+        {
+       
+         width: 80%;
+         height: 270px;
+         display: block;
+         margin: 0 auto;
+         padding: 20px;
+        }
+    }
         .container-img
         {
            display: flex;
@@ -42,6 +60,17 @@
            width: 60%;
           
         }
+        @media screen and (max-width:768px)
+        {
+            .container-img
+        {
+       
+            display: flex;
+           justify-content: center;
+           height: 90%;
+           width: 90%;
+        }
+    }
         .text
         {
             text-align: center;
@@ -52,13 +81,28 @@
             font-weight: 400;
             font-style: normal;
         }
+        @media screen and (max-width:768px)
+        {
+            .text
+        {
+            text-align: right;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+    }
         .btn-container
         {
             display: flex;
             justify-content: center;
-           margin-top: 40px;
+          margin-top: 40px;
            
         }
+       
         .btn-toggle
         {
            width: 10%;
@@ -71,6 +115,17 @@
            box-shadow: 2px 5px 5px 12px 12px solid rgb(176, 70, 176);
            
         }
+        @media screen and (max-width:768px)
+        {
+        .btn-toggle
+        {
+           width: 50%;
+           height: 25px;
+           margin: 10px;
+           border-radius: 15%;
+           font-size: 10px;  
+        }
+    }
        
         </style>
 </head>
