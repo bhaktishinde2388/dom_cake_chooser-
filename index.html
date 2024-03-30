@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: #FFDEE9;
+            background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+            height: 400px;
+        }
+        .heading
+        {
+            text-align: center;
+            font-size: 80px;
+            color: purple;
+            display: flex;
+            justify-content: center;
+        }
+        .container
+        {
+       
+         width: 600px;
+         height: 300px;
+         display: block;
+         margin: 0 auto;
+         padding: 20px;
+         border: 10px double rgba(154, 35, 138, 0.833);
+         box-shadow: 5px 10px 20px 1px rgb(55, 53, 52);
+         display: flex;
+           justify-content: center;
+        }
+        
+        .container-img
+        {
+           display: flex;
+           justify-content: center;
+           height: 100%;
+           width: 60%;
+          
+        }
+        .btn-container
+        {
+            display: flex;
+            justify-content: center;
+           margin-top: 40px;
+           
+        }
+        .btn-toggle
+        {
+           width: 10%;
+           height: 35px;
+           margin: 20px;
+           background-color:rgb(176, 70, 176);
+           color:rgb(221, 255, 0);
+           border-radius: 15%;
+           font-size: 20px;
+           box-shadow: 2px 5px 5px 12px 12px solid rgb(176, 70, 176);
+           
+        }
+       
+        </style>
+</head>
+<body> 
+  <b><i><hl class="heading">Cake</hl></b></i>
+    <div class="container">
+    <img   class="container-img"  src="choco (2).png" id="bulb">
+    </div>
+    <div class="btn-container">
+    <button class="btn-toggle " type="button" onclick="cake('btn1')">butter scotch</button>
+    <button class="btn-toggle " type="button" onclick="cake('btn2')">chocolate</button>
+    <button class="btn-toggle " type="button" onclick="cake('btn3')">fruit</button>
+    <button class="btn-toggle" type="button"  onclick="cake('btn4')">oreo</button>
+    <button class="btn-toggle " type="button" onclick="cake('btn5')">pineApple</button>
+
+    <script>
+        function cake(b)
+        {
+           const flaver = document.getElementById('bulb');
+           if(b=='btn1')
+           {
+           flaver.src = 'BUTTER-SCOTCH.png';
+           }
+           else if(b=='btn2')
+            {
+                flaver.src = 'choco (2).png';
+            }
+            else if(b=='btn3')
+            {
+                flaver.src = 'fruit2.png';
+            }
+            else if(b=='btn4')
+            {
+                flaver.src = 'oreo-cake2.png ';
+            }
+            else if(b=='btn5')
+            {
+                flaver.src = 'pineApple2.png';
+            }
+           
+    }
+    </script>
+</div>
+</body>
+</html>
